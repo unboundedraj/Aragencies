@@ -5,10 +5,12 @@ import NotFound from "../pages/NotFound/NotFound.tsx";
 import ContactUs from "../pages/Contactus/ContactUs.tsx";
 import Gallery from "../pages/Gallery/Gallery.tsx";
 import OurProducts from "../pages/Ourproducts/OurProducts.tsx";
+import Navbar from "../components/Navbar";
 
 const AppRoutes: React.FC = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
